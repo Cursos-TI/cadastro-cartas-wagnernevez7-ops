@@ -10,11 +10,11 @@ int main() {
     
     int populacao = 100000; 
     int pontos_turisticos = 20;
-    float area = 259.00;
-    float pib = 400.00;
+    float area = 259.000; // em Km²
+    float pib = 400.000; // em bilhões de reais
 
     printf("--- CARTA 1 ---\n");
-    printf("Carta: %s\nEstado: %s\nCódigo: %s\nCidade: %s\nPopulação: %d\nPontos turísticos: %d\nÁrea: %.2f\nPIB: %.2f\n\n", 
+    printf("Carta: %s\nEstado: %s\nCódigo: %s\nCidade: %s\nPopulação: %d\nPontos turísticos: %d\nÁrea: %.3f\nPIB: %.3f\n\n", 
             carta, estado, codigo, cidade, populacao, pontos_turisticos, area, pib);
 
     // --- SEGUNDA CARTA ---
@@ -25,11 +25,11 @@ int main() {
     
     populacao = 1000000;
     pontos_turisticos = 89;
-    area = 128.00;
-    pib = 950.00;
+    area = 128.000; // em Km²
+    pib = 950.000; // em bilhões de reais
 
     printf("--- CARTA 2 ---\n");
-    printf("Carta: %s\nEstado: %s\nCódigo: %s\nCidade: %s\nPopulação: %d\nPontos turísticos: %d\nÁrea: %.2f\nPIB: %.2f\n", 
+    printf("Carta: %s\nEstado: %s\nCódigo: %s\nCidade: %s\nPopulação: %d\nPontos turísticos: %d\nÁrea: %.3f\nPIB: %.3f\n", 
             carta, estado, codigo, cidade, populacao, pontos_turisticos, area, pib);
 
     return 0;

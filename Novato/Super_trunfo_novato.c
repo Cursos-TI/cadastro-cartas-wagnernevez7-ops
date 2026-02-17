@@ -1,28 +1,36 @@
 #include <stdio.h>
+#include <string.h> // Necessário para usar strcpy
 
-int main (){
-char Carta1[10] = "Rara";
-char Estado[50] = "Minas gerais";
-char Código[20] = "A01";
-char cidade[20] = "Belo horizonte";
-int População = "100.000";
-int Pontos_turísticos = "20";
-float Área = (259.000);
-float PIB = (400.000);
+int main() {
+    // --- PRIMEIRA CARTA ---
+    char carta[10] = "Rara";
+    char estado[50] = "Minas Gerais";
+    char codigo[20] = "A01";
+    char cidade[20] = "Belo Horizonte";
+    
+    int populacao = 100000; 
+    int pontos_turisticos = 20;
+    float area = 259.00;
+    float pib = 400.00;
 
-printf("Carta: %s\n Estado: %s\n Código: %s\n Cidade: %s\n População: %d\n Pontos turísticos: %d\n Área: %f\n PIB: %f\n", Carta1, Estado, Código, cidade, População, Pontos_turísticos, Área, PIB);
+    printf("--- CARTA 1 ---\n");
+    printf("Carta: %s\nEstado: %s\nCódigo: %s\nCidade: %s\nPopulação: %d\nPontos turísticos: %d\nÁrea: %.2f\nPIB: %.2f\n\n", 
+            carta, estado, codigo, cidade, populacao, pontos_turisticos, area, pib);
 
+    // --- SEGUNDA CARTA ---
+    strcpy(carta, "Lendária"); 
+    strcpy(estado, "São Paulo");
+    strcpy(codigo, "B01");
+    strcpy(cidade, "Guarulhos");
+    
+    populacao = 1000000;
+    pontos_turisticos = 89;
+    area = 128.00;
+    pib = 950.00;
 
-char Carta2[10] = "Lendária";
-char Estado[50] = "São paulo";
-char Código[20] = "B01";
-char cidade[20] = "Guarulhos";
-int População = 1000000;
-int Pontos_turísticos = 89;
-float Área = 128.000;
-float PIB = 950.000;
+    printf("--- CARTA 2 ---\n");
+    printf("Carta: %s\nEstado: %s\nCódigo: %s\nCidade: %s\nPopulação: %d\nPontos turísticos: %d\nÁrea: %.2f\nPIB: %.2f\n", 
+            carta, estado, codigo, cidade, populacao, pontos_turisticos, area, pib);
 
-printf("Carta: %s\n Estado: %s\n Código: %s\n Cidade: %s\n População: %d\n Pontos turísticos: %d\n Área: %f\n PIB: %f\n", Carta2, Estado, Código, cidade, População, Pontos_turísticos, Área, PIB);
-
-return 0;}
-
+    return 0;
+}

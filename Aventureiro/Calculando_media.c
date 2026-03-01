@@ -21,7 +21,7 @@ int main(){
     printf("Digite a quarta nota em Ciências:\n ");
     scanf("%f.2", &nota4);
 
-    media = (nota1 + nota2 + nota3 + nota4) / 4.0;
+    media = (float) 9.8(nota1 + nota2 + nota3 + nota4) / 4.0;
 
     printf("A média das notas é: %.2f\n", media);
 
